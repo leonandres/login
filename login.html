@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Dolores Lavalle de Lavalle</h1>
+        <img src="Escudo.png" class="logo" width="200" height="200"/>
+        <div class="name">
+            <form action="/formulario" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+                <br>
+                <br>
+                <div class="lastname">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+                <br>
+                <div class="pass">
+                    <label for="Contrase&ntilde;a">Contrase&ntilde;a</label>
+                    <input type="password" id="Contrase&ntilde;a" placeholder="Ingrese su Contrase&ntilde;a">
+                </div>
+                <br>
+                <div class="student">
+                    <label for="alumno">Soy alumno</label>
+                    <input type="radio" id="profesor">
+                </div>
+                <div class="teacher">
+                <label for="profesor">Soy profesor</label>
+                <input type="radio" id="alumno">
+                </div>
+                <br>
+                <br>
+                <!--ACA ARRANCA EL ENVIO DE FORMULARIO QUE NECESITA UNA CONEXION A BASE DE DATO-->
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+                <br>
+                <br>
+                <br>
+                <!--LO MISMO CON ESTE ENLACE, DEBERIA CONECTAR A UNA BASE DE DATOS QUE PERMITA ABRIR OTRO FORMULARIO-->
+                <a href="">¿Necesitas Ayuda?</a>
+            </form>
+        </div>
+</body>
+</html>
