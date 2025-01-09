@@ -2,8 +2,16 @@ body{
     margin: 0;
     padding: 0;
     font-family: montserrat;
-    background: linear-gradient(150deg, #2fa4c3);
+    /*background: linear-gradient(150deg, #2fa4c3);*/
+    background: linear-gradient(150deg, #2fa4c3, #ffffff);
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    align-items: flex-start; /* Cambiar de center a flex-start */
+    height: 100vh;
+    text-align: center;
 }
+
 #titulo{
     color: black;
     font-size: 50px;
@@ -13,9 +21,57 @@ body{
     background-color: skyblue;
 }
 
-.logo{
+.logo {
+    width: 30%; /* Ancho relativo */
+    max-width: 150px; /* Limitar ancho máximo */
+    height: auto; /* Mantener proporción */
+}
+
+/*.logo{
     margin-top: 50px;
     margin-left: 200px;
      width: auto;
+}*/
+
+titulo {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #333;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 1em; /* Para espaciado entre los elementos del formulario */
+}
+
+div {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em; /* Espaciado entre los elementos */
+}
+
+.form-container {
+    width: 90%;
+    max-width: 400px;
+}
+
+.radio {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
